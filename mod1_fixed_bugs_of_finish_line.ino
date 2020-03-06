@@ -220,6 +220,7 @@ void loop()
         after = millis();                             //Read the Current Time
         unsigned int duration = after - before;
         double sp = PI * dia * 1000.0 / duration;     //Calculate Current Speed
+        counter = 0;
         if (sp > (dec / 5.0))                         //If Current Speed > Required Speed, reduce it to half
         {
           currpwm = currpwm / 2;
@@ -229,7 +230,6 @@ void loop()
         {
           counter = 3;
         }
-        counter = 0;
       }
     }
     else if (mode == 3)         //Angle Turning Part
