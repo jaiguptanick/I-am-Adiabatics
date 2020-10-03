@@ -85,21 +85,21 @@ void loop()
       digitalWrite(6, LOW);
       digitalWrite(7, HIGH);
     }
-    else if (lms == LOW)            //Taking left turn if a left path is encountered
+    else if (lms == LOW)            //Taking left turn if a left path is encountered in its path
     {
       digitalWrite(4, LOW);
       digitalWrite(5, HIGH);
       digitalWrite(6, HIGH);
       digitalWrite(7, LOW);
     }
-    else                                        //Go straight otherwise
+    else                                        //else go straight
     {
       digitalWrite(4, HIGH);
       digitalWrite(5, LOW);
       digitalWrite(6, HIGH);
       digitalWrite(7, LOW);
     }
-    delay(100);
+    delay(110);
     digitalWrite(4, LOW);
     digitalWrite(5, LOW);
     digitalWrite(6, LOW);
